@@ -10,7 +10,7 @@ The learning framework consists of the learner and falsifier (or verifier). The 
 
 ## A typical procedure is as follows:
 - Define the neural network for Lyapunov function, encoder (Koopman observables) and decoder.
-- Collect data from unknown system and add them to the training set
+- Collect data from the unknown nonlinear system and add them to the training set
 - Set checking conditions for falsifier (falsification constraint)
 - Start training and verifying 
 - Procedure stops when no counterexample is found by the SMT solver
