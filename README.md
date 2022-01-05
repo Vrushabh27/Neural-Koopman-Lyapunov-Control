@@ -7,3 +7,10 @@ Code for our paper: Neural Koopman Lyapunov Control
 - [PyTorch: 1.2.0](https://pytorch.org/get-started/locally/)
 
 The learning framework consists of the learner and falsifier (or verifier). The learner learns the Control Lyapunov Function (CLF), Koopman based observables, and the matrices constituting the Koopman bilinear system. The falsifier (SMT solver) is used to generate counterexamples that do no satisfy the Control Lyapunov conditions (or satisfy the falsification constraint). These counterexamples are added to the training set. The process is repeated until the SMT solver is used to generate any counterexamples.
+
+## A typical procedure is as follows:
+- Define the neural network for Lyapunov function, encoder (Koopman observables) and decoder.
+- Collect data from unknown system and add them to the training set
+- Set checking conditions for falsifier (falsification constraint)
+- Start training and verifying 
+- Procedure stops when no counterexample is found by the SMT solver
