@@ -16,3 +16,15 @@ The learning framework consists of the learner and falsifier (or verifier). The 
 - Procedure stops when no counterexample is found by the SMT solver
 
 If you face any issues installing the packages, please feel free to directly run the codes on Google Colab.
+
+## Citations 
+
+```
+@article{zinage2023neural,
+  title={Neural koopman lyapunov control},
+  author={Zinage, Vrushabh and Bakolas, Efstathios},
+  journal={Neurocomputing},
+  year={2023},
+  publisher={Elsevier}
+}
+```
